@@ -1,41 +1,98 @@
-* {
-    background: rgb(214, 192, 192);
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: #0B0C10;
+    color: #F4F4F4;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 20px;
+    justify-content: center;
+    /* Add this property */
+    align-items: center;
+    /* Add this property */
+    text-align: center;
+}
+
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.color {
+    margin: 10px;
 }
 
 .color-box {
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-}
-
-#color-palette {
-    text-align: center;
-    margin-top: 50px;
-}
-
-#generate-btn {
-    display: block;
-    margin: 50px auto;
-    padding: 10px;
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: none;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
-    cursor: pointer;
+    /* transition: all 0.3s ease; */
+    box-shadow: 2px 2px 5px rgba(0.59, 0.50, 0.99, 0.1);
+    /* Add this property */
 }
 
-#generate-btn:hover {
-    background-color: rgb(51, 45, 45);
-    color: white;
+.color-box:hover {
+    /* border: 0.7px solid #333; */
+    /* transform: scale(1.1);    */
+    box-shadow: 3px 3px 8px rgba(1, 1, 1.10, 0.2);
+    /* Add this property */
 }
 
-.color-code {
-    font-weight: bold;
-    margin-top: 5px;
+
+footer {
+    background-color: #1F2833;
+    color: #F4F4F4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Default styles for all screens */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for screens smaller than 768px (mobile) */
+/* @media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    } */
+
+
+
+/* Adjust other styles as needed */
+/* width: calc(33% ); */
+/* } */
+
+/* Styles for screens between 768px and 1024px (iPad) */
+@media (min-width: 200px)and (max-width: 400px) {
+    body {
+        font-size: 16px;
+    }
+
+    .colors {
+        width: calc(30% - 60px);
+        margin: 5px 5px;
+    }
+
+    /* Adjust other styles as needed */
 }
