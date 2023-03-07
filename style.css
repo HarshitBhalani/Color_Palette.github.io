@@ -1,0 +1,41 @@
+* {
+    background: rgb(214, 192, 192);
+}
+
+.color-box {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#color-palette {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#generate-btn {
+    display: block;
+    margin: 50px auto;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    background-color: rgb(51, 45, 45);
+    color: white;
+}
+
+.color-code {
+    font-weight: bold;
+    margin-top: 5px;
+}
