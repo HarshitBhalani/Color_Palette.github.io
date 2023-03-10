@@ -4,12 +4,40 @@
 <head>
     <title>Color Hub</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <header>
-        <h1 id="colorhub" style="font-size: 40px;">Color Hub</h1>
-        <p style="font-size: small;">Click To Color To Copy Color Code</p>
+
+        <nav>
+            <div class="logo"  style="font-size: 40px;">Color Hub</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://harshitbhalani.github.io/-Color_Palette_Generator.github.io/" target="_blank">Color Palette Generator</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Colors
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#Neon">Neon Color Palette</a>
+                      <a href="#Cold">Cold Color Palette</a>
+                      <a href="#Retro">Retro Color Palette</a>
+                    </div>
+                  </div>
+                <!-- <li><a href="#">Gallery</a></li> -->
+
+                <li><a href="#COMMING SOON..">COMMING SOON..</a></li>
+            </ul>
+        </nav>
+        <p style="font-size: small; color:black;">Click To Color To Copy Color Code</p>
         <!-- <ul>
             <li><a href="#Popular">Home</a></li>
             <li><a href="#Neon Color Palette">Neon</a></li>
@@ -17,7 +45,6 @@
             <li><a href="#">About</a></li>
         </ul> -->
     </header>
-
     <h2 id="Popular" style="text-align: center;margin-top: 50px; margin-bottom: 0px">Popular Colors Palette : </h2>
     <section class="colors">
 
@@ -46,7 +73,7 @@
             <p>#FFFFFF </p>
         </div> -->
     </section>
-    <h2 style="text-align: center;margin-top: 50px; margin-bottom: 0px">Light Color Palette</h2>
+    <h2 id="Neon" style="text-align: center;margin-top: 50px; margin-bottom: 0px">Light Color Palette</h2>
     <section class="colors">
 
         <div class="color">
@@ -75,7 +102,7 @@
         </div> -->
     </section>
 
-    <h2 id="Neon Color Palette" style="text-align: center;margin-top: 50px; margin-bottom: 0px">Neon Color Palette </h2>
+    <h2 id="" style="text-align: center;margin-top: 50px; margin-bottom: 0px">Neon Color Palette </h2>
     <section class="colors">
 
         <div class="color">
@@ -133,7 +160,7 @@
             <p>#654321</p>
         </div>
     </section>
-    <h2 style="text-align: center;margin-top: 50px; margin-bottom: 0px">Vintage Color Palette : &nbsp; </h2>
+    <h2 id="Retro" style="text-align: center;margin-top: 50px; margin-bottom: 0px">Vintage Color Palette : &nbsp; </h2>
     <section class="colors">
         <div class="color">
             <div class="color-box" style="background-color:#556B2F;"></div>
@@ -195,7 +222,7 @@
             <p>#FFD700</p>
         </div>
         <div class="color">
-            <div class="color-box" style="background-color: #FDB813 ;"></div>
+            <div class="color-box" style="background-color:#FDB813;"></div>
             <p>#FDB813 </p>
         </div>
         <div class="color">
@@ -207,17 +234,72 @@
             <p>#FFDF00</p>
         </div>
         <div class="color">
-            <div class="color-box" style="background-color: #D4AF37;"></div>
+            <div class="color-box" style="background-color:#D4AF37;"></div>
             <p>#D4AF37</p>
         </div>
     </section>
     <!-- ====================================================================== -->
-    <h3 style="text-align: center;">Warm , Cold , Fall , Happy color Palette, etc.</h3>
-    <h4 style="text-align: center;">COMMING SOON..</h4>
 
+    <h2 id="Cold" style="text-align: center; margin-top: 50px; margin-bottom: 0px;">Warm Color Palette</h2>
+    <section class="colors">
+        <div class="color">
+            <div class="color-box" style="background-color:#FF5733;"></div>
+            <p>#FF5733</p>
+        </div>
+        <div class="color">
+            <div class="color-box" style="background-color:#FFC300;"></div>
+            <p>#FFC300</p>
+        </div>
+        <div class="color">
+            <div class="color-box" style="background-color:#FF7F50;"></div>
+            <p>#FF7F50</p>
+        </div>
+        <div class="color">
+            <div class="color-box" style="background-color:#FFA07A;"></div>
+            <p>#FFA07A</p>
+        </div>
+        <div class="color">
+            <div class="color-box" style="background-color:#FFDAB9;"></div>
+            <p>#FFDAB9</p>
+        </div>
+    </section>
+
+    <h2 style="text-align: center; margin-top: 50px; margin-bottom: 0px;">Cold Color Palette</h2>
+    <section class="colors">
+        <div class="color">
+            <div class="color-box" style="background-color: #00FFFF;"></div>
+            <p>#00FFFF3</p>
+        </div>
+        <div class="color">
+            <div class="color-box" style="background-color:#87CEEB;"></div>
+            <p>#87CEEB</p>
+        </div>
+        <div class="color">
+            <div class="color-box" style="background-color:#ADD8E6;"></div>
+            <p>#ADD8E6</p>
+        </div>
+        <div class="color">
+            <div class="color-box" style="background-color:#B0E0E6;"></div>
+            <p>#B0E0E6</p>
+        </div>
+        <div class="color">
+            <div class="color-box" style="background-color:#778899 ;"></div>
+            <p>#778899 </p>
+        </div>
+    </section>
+    <h3 style="text-align: center;">Fall , Happy color Palette, etc.</h3>
+    <h4 id="COMMING SOON.." style="text-align: center;">COMMING SOON..</h4>
     <footer>
-        <p>&copy; 2023 Color Hunt Clone | Created By <span> <a style="color:yellow" href="#colorhub">Harshit Bhalani</a> </span> </p>
+        <p>&copy; 2023 Color Hunt Clone | Created By <span> <a style="color:yellow" href="#colorhub">Harshit Bhalani</a>
+            </span> </p>
     </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 14l-9-9-9 9h18z"/>
+        </svg>
+      </button>
+      
+
     <script src="script.js"></script>
 </body>
 
