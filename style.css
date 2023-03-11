@@ -139,7 +139,8 @@ input[type="checkbox"] {
 
   .logo {
     /* text-align: center; */
-    margin-right: 190px;
+    /* margin-right: 190px; */
+    font-size: 4px;
   }
 }
 
